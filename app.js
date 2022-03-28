@@ -1,4 +1,4 @@
-const {produtos} = require("./model/dados")
+/*const {produtos} = require("./model/dados")
 const moment = require("moment")
 
 
@@ -12,7 +12,24 @@ for(let i = 0 ; i < produtos.length ; i++){
     } else {
         console.log("Seu produto e " , produtos[i].pdt ,"Seu nome e ", produtos[i].nomeCliente , "voce nao pode comprar" , )
     }
-}  
+}  */
+const express = require('express')
+const app = express()
+const port = 2500
+
+
+app.get('/Sobre', (req, res) => {
+  res.send('Aqui fica informações adicionais')
+})
+
+app.get('/Home', (req, res) => {
+  res.send('Aqui fica a página inicial')
+})
+
+app.listen(port, function(){
+  console.log(`teste one ${port}`)
+});
+
 
 
 
