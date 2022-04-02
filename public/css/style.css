@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    
+}
+header{
+    margin: 0;
+    background-color: #f5f500;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color: #000000;
+    border: 1px solid #000000;
+    max-width: 30%;
+    font-size: 1 rem;
+    text-align: center;
+}
+nav{
+   text-align: center;
+}
+.header{
+    text-align: right;    
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    text-decoration: underline;
+    color: #0000ff;
+}
+footer{
+    background-color: #f5f500;
+}

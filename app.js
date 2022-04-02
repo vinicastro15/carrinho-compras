@@ -14,9 +14,11 @@ for(let i = 0 ; i < produtos.length ; i++){
     }
 }  */
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 2500
 
+app.use('/Home', express.static(path.join(__dirname, 'public/')))
 
 app.get('/Sobre', (req, res) => {
   res.send('Aqui fica informações adicionais')
@@ -27,7 +29,7 @@ app.get('/Home', (req, res) => {
 })
 
 app.listen(port, function(){
-  console.log(`teste one ${port}`)
+  console.log(`está funcionando nessa porta ${port}`)
 });
 
 
